@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\istockphoto-1176781177-612x612.jpg" />
+    <None Remove="Resources\WPW_2021_BahrainGP_4.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="7.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAO\DAO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\istockphoto-1176781177-612x612.jpg" />
+    <Resource Include="Resources\WPW_2021_BahrainGP_4.png" />
+  </ItemGroup>
+
+</Project>

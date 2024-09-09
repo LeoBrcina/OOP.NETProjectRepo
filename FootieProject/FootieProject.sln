@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAO", "DAO\DAO.csproj", "{F731D76C-0729-4436-8773-1D7FA1006B4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootieForms", "FootieForms\FootieForms.csproj", "{CA1C82BE-C627-42E5-8FF5-826F9EB747A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootieWPF", "FootieWPF\FootieWPF.csproj", "{5F87D9EF-52DB-4841-A20F-03D479E438B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F731D76C-0729-4436-8773-1D7FA1006B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F731D76C-0729-4436-8773-1D7FA1006B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F731D76C-0729-4436-8773-1D7FA1006B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F731D76C-0729-4436-8773-1D7FA1006B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA1C82BE-C627-42E5-8FF5-826F9EB747A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1C82BE-C627-42E5-8FF5-826F9EB747A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1C82BE-C627-42E5-8FF5-826F9EB747A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1C82BE-C627-42E5-8FF5-826F9EB747A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F87D9EF-52DB-4841-A20F-03D479E438B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F87D9EF-52DB-4841-A20F-03D479E438B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F87D9EF-52DB-4841-A20F-03D479E438B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F87D9EF-52DB-4841-A20F-03D479E438B6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54968A3C-7ECC-4F3D-92F4-F6BCB6925CEA}
+	EndGlobalSection
+EndGlobal

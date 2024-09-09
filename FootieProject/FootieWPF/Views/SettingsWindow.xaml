@@ -1,0 +1,54 @@
+﻿<Window x:Class="FootieWPF.Views.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Settings" Height="400" Width="700">
+
+    <Window.InputBindings>
+        <!-- Bind Enter to Apply -->
+        <KeyBinding Key="Enter" Command="{Binding ApplyCommand}" />
+        <!-- Bind Esc to Exit -->
+        <KeyBinding Key="Escape" Command="{Binding CancelCommand}" />
+    </Window.InputBindings>
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Language Selection -->
+        <StackPanel Grid.Row="0" Margin="0,10">
+            <TextBlock Text="CHOOSE YOUR LANGUAGE" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <ComboBox Name="cbLanguage" Height="30" HorizontalAlignment="Center" Width="300"
+                      ItemsSource="{Binding LanguageOptions}" SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}">
+            </ComboBox>
+        </StackPanel>
+
+        <!-- World Cup Selection -->
+        <StackPanel Grid.Row="1" Margin="0,10">
+            <TextBlock Text="CHOOSE YOUR WORLD CUP" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <ComboBox Name="cbWorldCup" Height="30" HorizontalAlignment="Center" Width="300"
+                      ItemsSource="{Binding WorldCupOptions}" SelectedItem="{Binding SelectedWorldCup, Mode=TwoWay}">
+            </ComboBox>
+        </StackPanel>
+
+        <!-- Resolution Selection -->
+        <StackPanel Grid.Row="2" Margin="0,10">
+            <TextBlock Text="CHOOSE YOUR RESOLUTION" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+            <ComboBox Name="cbResolution" Height="30" HorizontalAlignment="Center" Width="300"
+                      ItemsSource="{Binding ResolutionOptions}" SelectedItem="{Binding SelectedResolution, Mode=TwoWay}">
+            </ComboBox>
+        </StackPanel>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <Button Name="btnApply" Content="Apply" Width="100" Height="30" Margin="10"
+                    Command="{Binding ApplyCommand}"/>
+            <Button Name="btnCancel" Content="Exit" Width="100" Height="30" Margin="10"
+                    Command="{Binding CancelCommand}"/>
+        </StackPanel>
+    </Grid>
+</Window>
